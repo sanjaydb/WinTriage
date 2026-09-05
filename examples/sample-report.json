@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "tool": "WinTriage",
+  "system": {
+    "computer": "LAB-WIN11",
+    "user": "analyst",
+    "processor_architecture": 9,
+    "logical_processors": 8,
+    "page_size": 4096,
+    "uptime_seconds": 12345
+  },
+  "processes": [
+    {
+      "pid": 4242,
+      "parent_pid": 1000,
+      "name": "sample.exe",
+      "path": "C:\\Lab\\sample.exe"
+    }
+  ],
+  "tcp_connections": [],
+  "persistence": [],
+  "recent_security_events": []
+}

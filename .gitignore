@@ -1,0 +1,9 @@
+build/
+*.exe
+*.obj
+*.pdb
+*.ilk
+*.lib
+*.exp
+*.json
+!examples/*.json
