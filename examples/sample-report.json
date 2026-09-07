@@ -18,6 +18,11 @@
     }
   ],
   "tcp_connections": [],
+  "udp_endpoints": [
+    {"address_family": "IPv4", "pid": 4242, "local_address": "127.0.0.1", "local_port": 53000, "local_scope_id": 0},
+    {"address_family": "IPv6", "pid": 4242, "local_address": "::1", "local_port": 53001, "local_scope_id": 0}
+  ],
+  "udp_collection_errors": {"IPv4": null, "IPv6": null},
   "persistence": [],
   "recent_security_events": []
 }

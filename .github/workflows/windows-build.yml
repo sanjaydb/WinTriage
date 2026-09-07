@@ -16,3 +16,6 @@ jobs:
       - name: Smoke test
         shell: pwsh
         run: ./tests/smoke-test.ps1
+      - name: UDP endpoint integration test
+        shell: pwsh
+        run: ./tests/udp-test.ps1

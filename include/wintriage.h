@@ -18,6 +18,7 @@ void wt_json_error(FILE *file, DWORD error);
 int wt_write_system(WT_REPORT *report);
 int wt_write_processes(WT_REPORT *report);
 int wt_write_network(WT_REPORT *report);
+int wt_write_udp(WT_REPORT *report);
 int wt_write_persistence(WT_REPORT *report);
 int wt_write_events(WT_REPORT *report);
 int wt_write_file_analysis(WT_REPORT *report, const wchar_t *path);
