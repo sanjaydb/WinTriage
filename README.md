@@ -12,6 +12,7 @@ The project is intended for SOC analysts, incident responders, malware analysts,
 - Hostname, user, architecture, processor count, page size, and uptime
 - Running processes with PID, parent PID, name, and accessible executable path
 - IPv4 TCP endpoints with state, addresses, ports, and owning PID
+- IPv4 and IPv6 UDP endpoints with local addresses, ports, owning PID, and collection errors
 - Current-user and local-machine `Run` and `RunOnce` registry values
 - Automatically started Windows services and their configured executable paths
 - Recent warning and error events from System and Microsoft Defender logs
@@ -36,6 +37,10 @@ build\wintriage.exe --output triage-report.json --file C:\Windows\System32\notep
 ```
 
 Administrator access is optional. Running from an elevated terminal may reveal additional process paths, services, and event-log entries. The program continues when access to an individual data source is restricted.
+
+Use `udp_endpoints[].pid` to correlate a UDP endpoint with `processes[].pid` in the same report. UDP entries describe bound local endpoints, not established connections or confirmed remote peers. Check `udp_collection_errors` before treating an empty inventory as evidence that no UDP endpoints exist. See [collected data](docs/collected-data.md) for the field definitions.
+
+After building, run `./tests/smoke-test.ps1` and `./tests/udp-test.ps1` in PowerShell. The UDP test binds temporary IPv4 and IPv6 loopback sockets, checks their addresses, ports, and owning PID, and deletes its temporary report. It sends no packets and requires IPv6 loopback support.
 
 ## Interpret results carefully
 

@@ -51,6 +51,8 @@ int wt_write_report(const wchar_t *output, const wchar_t *analysis_path) {
     fputws(L",\n", file);
     wt_write_network(&report);
     fputws(L",\n", file);
+    wt_write_udp(&report);
+    fputws(L",\n", file);
     wt_write_persistence(&report);
     fputws(L",\n", file);
     wt_write_events(&report);

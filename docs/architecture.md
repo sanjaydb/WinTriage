@@ -7,6 +7,7 @@ WinTriage is deliberately small and dependency-free. `main.c` validates command-
 | `system_info.c` | `GetComputerNameW`, `GetUserNameW`, `GetNativeSystemInfo` | Host context |
 | `processes.c` | Tool Help and limited process-query APIs | Process inventory |
 | `network.c` | IP Helper API | PID-associated TCP endpoints |
+| `udp.c` | `GetExtendedUdpTable`, `InetNtopW` | IPv4/IPv6 UDP endpoints and per-family errors |
 | `persistence.c` | Registry and Service Control Manager | Common autoruns and automatic services |
 | `event_logs.c` | Windows Event Log API | Recent warning/error event XML |
 | `file_analysis.c` | CNG, WinTrust, PE structures | Hash, signature result, and PE summary |

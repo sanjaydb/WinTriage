@@ -7,7 +7,8 @@
 
 ## v0.2.0 — Coverage and usability
 
-- IPv6 and UDP endpoint support
+- [x] IPv4 and IPv6 UDP endpoint inventory with owning PIDs and per-family errors
+- [ ] IPv6 TCP endpoint support
 - Startup-folder and scheduled-task inventory
 - Process owner, creation time, loaded modules, and hashes
 - Structured event fields instead of raw event XML
