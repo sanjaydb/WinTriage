@@ -1,6 +1,6 @@
 # WinTriage
 
-[![Windows build](https://github.com/sanjaydb/WinTriage/actions/workflows/windows-build.yml/badge.svg)](https://github.com/sanjaydb/WinTriage/actions/workflows/windows-build.yml)
+[![Windows build](https://github.com/sanjaydb/WinTriage/actions/workflows/windows-build.yml/badge.svg?branch=main)](https://github.com/sanjaydb/WinTriage/actions/workflows/windows-build.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 WinTriage is a read-only Windows incident-response and host-triage collector written in C using documented Win32 APIs. It creates a UTF-8 JSON report that helps analysts correlate processes, executable paths, TCP connections, persistence locations, recent important events, and optional file metadata.
